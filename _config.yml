@@ -1,3 +1,4 @@
 title: Mark Morrison
-logo: images/profile photo.jpeg
+avatar: images/profile photo.jpeg
+round-avatar: true
 theme: jekyll-theme-minimal
