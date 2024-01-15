@@ -1,5 +1,7 @@
+
 ## Project 1: Building a Shiny web app
-This aim of this project was to build a Shiny app which visualises and summarises metorological collected at 20 locations across the United Kingdom and to calculate and display a diagnostic called the Hutton Criteria which is used to alert farmers of the risk of potato blight forming on potato crops.
+
+This aim of this project was to build a Shiny app which visualises and summarises metorological data collected at 20 locations across the United Kingdom and also calculates and displays a diagnostic called the Hutton Criteria which is used to alert farmers of the risk of potato blight forming on potato crops.
 The app was required to have the following functionality:
 - Allow the user to select up to five locations which should then be displayed on a map
 - Allow the user to select one of four weather variables
