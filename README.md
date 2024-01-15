@@ -16,6 +16,4 @@ The app was required to have the following functionality:
 - Produce a downloadable csv file of the table
 - Display calculate and display the Hutton Criteria for a user selected location and month
 
-### My approach
-- Wrangled data using Tidyverse packages
-- Created 
+  ![Image of Shiny web app page 1] ()
