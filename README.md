@@ -1,3 +1,3 @@
 ## Project 1: Building a Shiny web app
-This was the final project from an R programming module. 
+This aim of this project was to build a Shiny app which visualises metorological
 
