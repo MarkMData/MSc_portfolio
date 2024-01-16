@@ -1,5 +1,5 @@
 
-# Building a Shiny Web App in R  
+# Project 1: Shiny Web App in R  
 
 ### Overview
 
