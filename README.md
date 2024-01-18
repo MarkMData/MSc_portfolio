@@ -69,7 +69,7 @@ The first neural network approach consisted of a single layer implementing a mul
 - After some experimentation with different learning rates, a value of 0.001 was chosen as a balance between time to convergence and accuracy & stability and at this value running for 20,000 epochs was sufficient for the loss, training accuracy and validation accuracy to stabilize without over fitting (see Figure 1).
 <br>
 
-![Figure 1.](https://github.com/MarkMData/TensoFlow_project/blob/main/Tf_proj_image1.png)  
+![Figure 1.](https://github.com/MarkMData/portfolio/blob/main/images/Tf_proj_image1.png?raw=true)  
 ***Figure 1. Training loss, training accuracy, and validation accuracy for Model 1.***  
 <br>
 Accuracy for model 1 using the training data was 0.406 and for the validation data it was 0.292. This represents poor performance and could be due to two factors. Firstly, only the body acceleration data was used, and secondly by flattening the independent x, y and z components into a single one-dimensional array information about the inter-axis relationships is lost.  
@@ -92,7 +92,7 @@ This was implemented in the following way:
 training accuracy, for each batch size are displayed in Table 1).
 <br>
 
-![Figure 2.](https://github.com/MarkMData/TensoFlow_project/blob/main/Tf_proj_image2.png)  
+![Figure 2.](https://github.com/MarkMData/portfolio/blob/main/images/Tf_proj_image2.png?raw=true)  
 ***Figure 2. Accuracy and loss for model 2 with three different batch sizes. Training data is blue and validation data is red.***  
 <br>  
 
@@ -153,7 +153,7 @@ The accuracy values for all iterations of model 2 are displayed in Table 2. Comp
 <br>
 <br>
   
-![Figure 3.](https://github.com/MarkMData/TensoFlow_project/blob/main/Tf_proj_image3.png)  
+![Figure 3.](https://github.com/MarkMData/portfolio/blob/main/images/Tf_proj_image3.png?raw=true)  
 ***Figure 3. Training and validation accuracy for the best performing model with a single convolutional layer (left) versus the network with two convolutional layers (right). Training data is blue and validation data is red***
 <br>
 ## Model 3.
@@ -179,7 +179,7 @@ Both configurations had excellent validation accuracy (see Table 3) with the sin
 <br>
 <br>  
 
-![Figure 4.](https://github.com/MarkMData/TensoFlow_project/blob/main/Tf_proj_image4.png)  
+![Figure 4.](https://github.com/MarkMData/portfolio/blob/main/images/Tf_proj_image3.png?raw=true)  
 ***Figure 4. Accuracy and loss for model 3. The single convolutional layer configuration is on the right and the three convolutional layer configuration is on the left. Training data is blue and validation data is red.***  
 <br>  
 ## Performance of models on test data.  
