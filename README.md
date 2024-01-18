@@ -51,8 +51,7 @@ The data sets for each location were provided to us as csv files and loading the
 # Project 2: Deep Learning with Tensor Flow  
 ## Human activity classification  
 <br>
-The aim of this project was the classification of of human activity with neural networks using TensorFlow. The data was obtained from the [UCI Machine Learning Repository](https://archive.ics.uci.edu/dataset/240/human+activity+recognition+using+smartphones) and was created by Reyes-Ortiz, Anguita, Ghio,
-Oneto, & Parra (2012).  
+The aim of this project was the classification of of human activity with neural networks using TensorFlow. The data was obtained from the <a href="https://archive.ics.uci.edu/dataset/240/human+activity+recognition+using+smartphones" target="_blank">UCI Machine Learning Repository!</a> [UCI Machine Learning Repository](https://archive.ics.uci.edu/dataset/240/human+activity+recognition+using+smartphones) and was created by Reyes-Ortiz, Anguita, Ghio, Oneto, & Parra (2012).  
   
 The data set contains of readings from the accelerometer and gyroscope contained within a smartphone that was worn by 30 volunteers as they were performing six activities (walking, walking upstairs, walking downstairs, sitting, standing and laying). All the data had been collected at 50Hz and consists of triaxial linear acceleration data (that was separated into body acceleration and gravity components) and triaxial angular velocity data. There were 10299 total samples of 128 readings, each representing 2.56 seconds of activity and these had been randomly split into a training set with 7352 observations (70%) and a testing set with 2947 observations (30%). I split the training set again into training (80%) and validataion (20%) sets for use during model development.
   
@@ -198,4 +197,9 @@ convolutional layers had accuracy against the test data of 0.958 which represent
 
  <br>  
 
-The convolutional networks had the advantage over the multinomial regression network of using the input data in a shape that allowed the spatial relationships between the x, y and z axis to be preserved. They also had multiple layers in which features within the data could be identified and then combined.
+The convolutional networks had the advantage over the multinomial regression network of using the input data in a shape that allowed the spatial relationships between the x, y and z axis to be preserved. They also had multiple layers in which features within the data could be identified and then combined.  
+<br>  
+### References  
+Kingma, D. P., & Lei Ba, J. (2015). Adam: A method for stochastic optimization. ICLR, (p. 1:15).  
+
+Reyes-Ortiz, J., Anguita, D., Ghio, A., Oneto, L., & Parra, X. (2012). Human Activity Recognition Using Smartphones. Retrieved from UCI Machine Learning Repository: ttps://archive.ics.uci.edu/dataset/240/human+activity+recognition+using+smartphones
