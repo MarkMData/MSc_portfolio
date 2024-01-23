@@ -204,7 +204,8 @@ Kingma, D. P., & Lei Ba, J. (2015). Adam: A method for stochastic optimization. 
 Reyes-Ortiz, J., Anguita, D., Ghio, A., Oneto, L., & Parra, X. (2012). Human Activity Recognition Using Smartphones. Retrieved from UCI Machine Learning Repository: ttps://archive.ics.uci.edu/dataset/240/human+activity+recognition+using+smartphones  
 <br>  
 
-# Project 3: Machine Learning Classification using R
+# [Project 3: Machine Learning Classification using R](https://github.com/MarkMData/ML_classification_project/tree/main)  
+
 ## Predicting drug use with five machine learning algorithms  
 <br>  
 
