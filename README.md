@@ -76,7 +76,7 @@ The first neural network approach consisted of a single layer implementing a mul
 <br>
 Accuracy for model 1 using the training data was 0.406 and for the validation data it was 0.292. This represents poor performance and could be due to two factors. Firstly, only the body acceleration data was used, and secondly by flattening the independent x, y and z components into a single one-dimensional array information about the inter-axis relationships is lost.  
 
-## Model 2.  
+### Model 2.  
 
 The second neural network approach used was a one-dimensional convolutional neural network, built using the Keras API, that took the combined x, y and z body acceleration data with a (128, 3) shape as input and had the following five layers arranged sequentially:
 1. One-dimensional convolution layer with a kernel size of 4 and 32 filters.
@@ -158,7 +158,7 @@ The accuracy values for all iterations of model 2 are displayed in Table 2. Comp
 ![Figure 3.](https://github.com/MarkMData/portfolio/blob/main/images/Tf_proj_image3.png?raw=true)  
 ***Figure 3. Training and validation accuracy for the best performing model with a single convolutional layer (left) versus the network with two convolutional layers (right). Training data is blue and validation data is red***
 <br>
-## Model 3.
+### Model 3.
 The final network approach (network 3) involved using all nine input variables, which were the x, y, z components for each of the body acceleration, gravity and angular velocity data.
 - The nine inputs were combined into an array of shape (128, 9) and then the training set was split into training (80% of observations) and validation (20% of
 observations) sets.
