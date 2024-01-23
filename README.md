@@ -50,14 +50,17 @@ The data sets for each location were provided to us as csv files and loading the
 
 # [Project 2: Deep Learning with Tensor Flow](https://github.com/MarkMData/TensoFlow_project/tree/main)  
 ## Human activity classification  
-<br>
+<br>  
+
+### Overview  
 The aim of this project was the classification of of human activity with neural networks using TensorFlow. The data was obtained from the <ahref="https://archive.ics.uci.edu/dataset/240/human+activity+recognition+using+smartphones" target="_blank"> UCI Machine Learning Repository</a>  and was created by Reyes-Ortiz, Anguita, Ghio, Oneto, & Parra (2012). The data set contains of readings from the accelerometer and gyroscope contained within a smartphone that was worn by 30 volunteers as they were performing six activities (walking, walking upstairs, walking downstairs, sitting, standing and laying). All the data had been collected at 50Hz and consists of triaxial linear acceleration data (that was separated into body acceleration and gravity components) and triaxial angular velocity data. There were 10299 total samples of 128 readings, each representing 2.56 seconds of activity and these had been randomly split into a training set with 7352 observations (70%) and a testing set with 2947 observations (30%). I split the training set again into training (80%) and validataion (20%) sets for use during model development.  
 <br>  
 <br>
 The goal of the analysis was to evaluate the accuracy of three different neural network models (of increasing complexity) for predicting the activity class from the acceleration and velocity time segments using Python, TensorFlow, and Keras to develop the models, Tensorboard to visualise the progression of training over time.  
+  
 <br>  
 
-## Model 1.  
+### Model 1.  
 
 The first neural network approach consisted of a single layer implementing a multinomial regression model using only the body acceleration data and was implemented as follows:
 - The individual x, y and z axis components of the body acceleration data were combined and flattened to form one-dimensional arrays.
