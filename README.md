@@ -245,14 +245,14 @@ The dataset was split into training (50% of observations), validation (30% of ob
 
 <br>  
 
-![Figure 1](https://github.com/MarkMData/portfolio/blob/main/images/boxplots.jpeg)  
+![Figure 1](https://github.com/MarkMData/portfolio/blob/main/images/boxplots.jpeg?raw=true)  
 
 ***Figure 1. Distributions for predictor variables by drug use (0 = never used, 1 = has used).***  
 <br>  
 
 Figure 2 contains correlations, scatterplots, and density plots for all the independent variables. There are no strong correlations between any of the predictor variables meaning multicollinearity was not a concern, but there is evidence that some are not normally distributed and there appears to be an extreme outlier in the ethnicity data.  
 <br>  
-![Figure 2](https://github.com/MarkMData/portfolio/blob/main/images/pairsplot.jpeg)  
+![Figure 2](https://github.com/MarkMData/portfolio/blob/main/images/pairsplot.jpeg?raw=true)  
 ***Figure 2. Relationships between predictor variables with drug use as a class (0 = never used, 1 = has used).***  
 <br>  
 From the boxplots and scatter plots it appeared that the Ethicity variable was comprised of very few unique values. To identify if the Ethnicity (or any other variables) had a near zero variance the percentage of unique values and the frequency ratio of the most prevalant to the second most prevalant value for each variable was calculated (using the caret package), with cut offs of 10% for the unique values and 20:1 for the frequency ratio, as recommended by Kuhn & Johnson (2013). The only variable to meet both criteria was the Ethicity variable with a frequecy ratio of 30.44 and only 2.33% unique values. As the variable Ethnicity had near zero variance, and contained an extreme outlier, it was excluded from all the models. As some of the classification methods such as k-nearest neighbours are sensitive to differences in scale of the variables, the training, validation and test dataset were centred and scaled using the mean and standard deviation from the training data before being used in modelling, and this was also done using the caret package.  
@@ -264,7 +264,7 @@ From the boxplots and scatter plots it appeared that the Ethicity variable was c
 ### Logistic regression with lasso penalty model  
 The logistic regression model with a lasso penalty was fit using the glmnet package. 100 values of lambda were evaluated using 10-fold cross validation to identify when the minimum misclassification error occurred and then the value within one standard error of this (lambda = 0.196) was selected (see Figure 3).  
 <br>  
-![Figure 3](https://github.com/MarkMData/portfolio/blob/main/lassoCV.jpeg)  
+![Figure 3](https://github.com/MarkMData/portfolio/blob/main/lassoCV.jpeg?raw=true)  
 ***Figure 3. Logistic regression with lasso penalty model cross validation miss-classification error for different values of log lambda. Vertical lines are placed at the minimum CV error (left) and one standard error from the minimum (right).***  
 
 <br>  
@@ -277,7 +277,7 @@ To identify the optimal value for k, 10-fold cross validation was used to iterat
 
 <br>  
 
-![Figure 4](https://github.com/MarkMData/portfolio/blob/main/knnplot.jpeg)  
+![Figure 4](https://github.com/MarkMData/portfolio/blob/main/knnplot.jpeg?raw=true)  
 ***Figure 4. 10-fold cross validation accuracy for KNN model with odd values of k from 1 and 99.***  
 
 <br>  
@@ -287,7 +287,7 @@ To identify the optimal value for k, 10-fold cross validation was used to iterat
 A full classification tree was created (using the rpart package) and then pruned, to reduce the likelihood of overfitting, based on the complexity parameter that corresponded to the lowest average prediction error within one standard deviation from the minimum prediction error, determined by 10-fold cross validation. This resulted in a small tree with only the variables X.Country and Age included (see Figure 5). Sensitivity, specificity and accuracy for the classification tree against the validation data were 0.811, 0.7 and 0.7889 respectively (see Table 4).
 <br>  
 
-![Figure 4](https://github.com/MarkMData/portfolio/blob/main/treePlot.jpeg)  
+![Figure 4](https://github.com/MarkMData/portfolio/blob/main/treePlot.jpeg?raw=true)  
 ***Figure 5. Classification tree after pruning.***  
 
 <br>  
@@ -297,13 +297,13 @@ The random forest model involved constructing many trees using bootstrapped samp
 
 <br>  
 
-![Figure 5](https://github.com/MarkMData/portfolio/blob/main/forestplot.jpeg)  
+![Figure 5](https://github.com/MarkMData/portfolio/blob/main/forestplot.jpeg?raw=true)  
 ***Figure 5. Average 10-fold cross validation accuracy for the random forest model with different numbers of predictors included at each split.***  
 <br>  
 ### Support vector machines model  
 The e1071 package was used to implement a SVM model with radial basis function. A grid of values for the cost parameter (2 raised to the power of integers from -2 to 10) and gamma (10 raised to the power of integers from -7 to 0) were evaluated using 10-fold cross validation. The average cross validation error is displayed in Figure 6, with the best tune occurring with a cost parameter = 512 and gamma = 0.00001. The performance of the best tuned SVM model against the validation data resulted in a sensitivity of 0.844, specificity of 0.733, and accuracy of 0.789 (see Table 4 for results).  
 <br>  
-![Figure 6](https://github.com/MarkMData/portfolio/blob/main/svmplot.jpeg)  
+![Figure 6](https://github.com/MarkMData/portfolio/blob/main/svmplot.jpeg?raw=true)  
 ***Figure 6. Average 10-fold cross validation error for the SVM model with different values of the cost parameter and gamma.***  
 <br>  
 ### Summary of performance of all models against validation data  
