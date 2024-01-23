@@ -55,6 +55,7 @@ The aim of this project was the classification of of human activity with neural 
 <br>  
 <br>
 The goal of the analysis was to evaluate the accuracy of three different neural network models (of increasing complexity) for predicting the activity class from the acceleration and velocity time segments using Python, TensorFlow, and Keras to develop the models, Tensorboard to visualise the progression of training over time.  
+<br>  
 
 ## Model 1.  
 
