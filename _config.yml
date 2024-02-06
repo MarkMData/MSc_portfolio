@@ -1,6 +1,4 @@
-remote_theme: pages-themes/minimal@v0.2.0
-# logo: https://github.com/MarkMData/portfolio/blob/main/images/profile_photo.jpg?raw=true
-plugins:
-- jekyll-remote-theme
 title: Mark Morrison Project Portfolio
+# logo: https://github.com/MarkMData/portfolio/blob/main/images/profile_photo.jpg?raw=true
+theme: jekyll-theme-minimal
 markdown: GFM
